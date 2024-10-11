@@ -1,0 +1,22 @@
+{
+  "images" : [
+    {
+      "filename" : "florencia-potter-yxmNWxi3wCo-unsplash.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "yuki-dog-dkulmTU4rss-unsplash.jpeg",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
