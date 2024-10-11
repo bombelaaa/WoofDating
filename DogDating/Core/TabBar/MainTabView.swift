@@ -10,7 +10,7 @@ import SwiftUI
 struct MainTabView: View {
     var body: some View {
         TabView {
-            Text("Swiping")
+            Text("Swipe")
                 .tabItem {
                     Image(systemName: "pawprint")
                         .imageScale(.large)
