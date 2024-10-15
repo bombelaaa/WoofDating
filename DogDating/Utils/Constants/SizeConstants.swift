@@ -7,12 +7,18 @@
 
 import SwiftUI
 
-struct SizeConstants: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+struct SizeConstants {
+    
+    static var screenCutoff: CGFloat {
+        (UIScreen.main.bounds.width / 2) * 0.8
     }
-}
-
-#Preview {
-    SizeConstants()
+    static var cardWidth: CGFloat {
+        UIScreen.main.bounds.width - 20
+    }
+    
+    
+    static var cardHeight: CGFloat {
+        UIScreen.main.bounds.height / 1.45
+    }
+    
 }
