@@ -10,13 +10,22 @@ import SwiftUI
 struct CardView: View {
     @State private var xOffset: CGFloat = 0
     @State private var degrees: Double = 0
+    @State private var currentImageIndex = 0
+    
+    @State private var mockImages = [
+        "Bubby1",
+        "Bubby2"
+    ]
     
     var body: some View {
         ZStack(alignment: .bottom) {
             ZStack(alignment: .top) {
-                Image(.image)
+                Image(mockImages[currentImageIndex])
                     .resizable()
                     .scaledToFill()
+                    .overlay{
+                        ImageScrollingView(currentImageIndex: $currentImageIndex, imageCount: mockImages.count)
+                    }
                     .frame(width: SizeConstants.cardWidth, height: SizeConstants.cardHeight)
                     .clipShape(RoundedRectangle(cornerRadius: 10))
                 
