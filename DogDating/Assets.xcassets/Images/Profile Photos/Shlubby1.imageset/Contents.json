@@ -1,17 +1,15 @@
 {
   "images" : [
     {
-      "filename" : "florencia-potter-yxmNWxi3wCo-unsplash.jpg",
+      "filename" : "shlubby1.jpg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "yuki-dog-dkulmTU4rss-unsplash.jpeg",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "shlubby1.jpg",
       "idiom" : "universal",
       "scale" : "3x"
     }

@@ -18,15 +18,15 @@ struct MockData {
         ),
         .init(
             id: NSUUID().uuidString,
-            fullname: "Bubby2",
+            fullname: "Pubby",
             age: 5,
             photoURLs: ["Bubby1","Bubby2"]
         ),
         .init(
             id: NSUUID().uuidString,
-            fullname: "Bubby3",
+            fullname: "Shlubby",
             age: 6,
-            photoURLs: ["Bubby1","Bubby2"]
+            photoURLs: ["Shlubby1","Shlubby2", "Shlubby3"]
         ),
     ]
 }
