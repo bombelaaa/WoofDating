@@ -11,7 +11,7 @@ import SwiftUI
 struct DogDatingApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainTabView()
         }
     }
 }
