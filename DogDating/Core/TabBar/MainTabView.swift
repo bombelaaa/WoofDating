@@ -25,7 +25,7 @@ struct MainTabView: View {
                     Image(systemName: "bubble")
                 } .tag(2)
             
-            CurrentUserProfileView(user: MockData.users[1])
+            CurrentUserProfileView(user: MockData.users[2])
                 .tabItem {
                     Image(systemName: "dog.fill")
                 } .tag(3)
@@ -37,4 +37,5 @@ struct MainTabView: View {
 
 #Preview {
     MainTabView()
+        .environmentObject(MatchManager())
 }

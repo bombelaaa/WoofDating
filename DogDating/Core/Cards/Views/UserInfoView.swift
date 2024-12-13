@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct UserInfoView: View {
+    @Binding var showProfileModel: Bool
+    
     let user: User
     var body: some View {
         VStack(alignment: .leading) {
@@ -23,7 +25,7 @@ struct UserInfoView: View {
                 Spacer()
                 
                 Button {
-                    print("DEBUG: Show profile here...")
+                    showProfileModel.toggle()
                 } label: {
                     Image(systemName: "arrow.up.circle")
                         .fontWeight(.bold)
@@ -32,7 +34,7 @@ struct UserInfoView: View {
                 
             }
             
-            Text("Corgy | Mix")
+            Text("Husky | Mix")
                 .font(.subheadline)
                 .lineLimit(2)
         }
@@ -45,5 +47,5 @@ struct UserInfoView: View {
 }
 
 #Preview {
-    UserInfoView(user: MockData.users[1])
+    UserInfoView(showProfileModel: .constant(false), user: MockData.users[1])
 }

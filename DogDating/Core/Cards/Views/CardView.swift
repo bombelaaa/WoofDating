@@ -8,10 +8,13 @@
 import SwiftUI
 
 struct CardView: View {
+    @EnvironmentObject var matchManager: MatchManager
     @ObservedObject var viewModel: CardsViewModel
+    
     @State private var xOffset: CGFloat = 0
     @State private var degrees: Double = 0
     @State private var currentImageIndex = 0
+    @State private var showProfileModel = false
     
     let model: CardModel
     
@@ -33,9 +36,15 @@ struct CardView: View {
                 SwipeActionIndicatorView(xOffset: $xOffset)
             }
                 
-            UserInfoView(user: user)
+            UserInfoView(showProfileModel: $showProfileModel, user: user)
                 .padding(.horizontal)
         }
+        .fullScreenCover(isPresented: $showProfileModel) {
+            UserProfileView(user: user)
+        }
+        .onReceive(viewModel.$buttonSwipeAction, perform: { action in
+            onReceiveSwipeAction(action)
+        })
         .offset(x: xOffset)
         .rotationEffect(.degrees(degrees))
 //        .animation(.snappy, value: xOffset)
@@ -67,6 +76,7 @@ private extension CardView {
             degrees = 12
         } completion: {
             viewModel.removeCard(model)
+            matchManager.checkForMatch(withUser: user)
         }
     }
         func swipeLeft() {
@@ -77,7 +87,22 @@ private extension CardView {
                 viewModel.removeCard(model)
             }
         }
+    
+    func onReceiveSwipeAction(_ action: SwipeAction?) {
+        guard let action else { return}
+        
+        let topCard = viewModel.cardModels.last
+        
+        if topCard == model {
+            switch action{
+            case .reject:
+                swipeLeft()
+            case .like:
+                swipeRight()
+            }
+        }
     }
+}
 
 
 private extension CardView {
