@@ -37,7 +37,7 @@ struct CardStackView: View {
             }
             .toolbar {
                 ToolbarItem(placement: .topBarLeading) {
-                    Image(.WOOF)
+                    Image(.woof1)
                         .resizable()
                         .scaledToFill()
                         .frame(width: 88)
