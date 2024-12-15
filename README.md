@@ -41,7 +41,7 @@ Deployment Instructions
 Clone the repository to your local machine:
     git clone https://github.com/bombelaaa/WoofDating
 Open the project in Xcode:
-    open WoofDating.xcodeproj
+    open DogDating.xcodeproj
     
 Ensure you have the latest version of Xcode and Swift installed.
 
