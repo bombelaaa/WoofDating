@@ -1,6 +1,6 @@
 ## WoofDating
 
-**Github Repository**: [WoofDating on Github](https://github.com/bombelaaa/DogDating)
+**Github Repository**: [WoofDating on Github](https://github.com/bombelaaa/WoofDating)
 
 Developers
 - Jimy B.
@@ -35,7 +35,7 @@ The app leverages modern technologies and clean architectural principles:
 
 Documentation of the Project
 GitHub Location
-All source code and project files are available on GitHub: [WoofDating] (https://github.com/bombelaaa/DogDating)
+All source code and project files are available on GitHub: [WoofDating] (https://github.com/bombelaaa/WoofDating)
 
 Deployment Instructions
 Clone the repository to your local machine:
