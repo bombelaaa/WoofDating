@@ -3,11 +3,11 @@
 **Github Repository**: [WoofDating on Github](https://github.com/bombelaaa/WoofDating)
 
 Developers
-- Jimy B.
+- Jimy Bombela
 - Gabe Ramos
 
 Goals of this Project
-Doggo Dates is an innovative mobile application designed to connect dog owners and their pets for playdates, social activities, and companionship. The app aims to:
+WoofDating is an innovative mobile application designed to connect dog owners and their pets for playdates, social activities, and companionship. The app aims to:
   -Foster socialization among dogs for improved mental and physical well-being.
   -Build a community of dog owners sharing experiences and connections.
   -Simplify the process of finding compatible playmates based on dogs' specific needs and preferences.
